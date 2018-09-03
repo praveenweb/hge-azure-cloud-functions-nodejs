@@ -1,11 +1,11 @@
-#Azure Cloud Function Node.js with Hasura GraphQL Mutation
+# Azure Cloud Function Node.js with Hasura GraphQL Mutation
 
-##Pre-requisites
+## Pre-requisites
 Install [azure-cli](https://github.com/Azure/azure-cli)
 
 Install [azure-functions-core-tools](https://github.com/Azure/azure-functions-core-tools)
 
-##Setup Cloud Function
+## Setup Cloud Function
 func init nodejs-echo
 
 func templates list -l JavaScript
@@ -23,13 +23,13 @@ func azure login
 func azure subscriptions set 'Free Trial'
 func azure functionapp publish 'myfunctionsapp'
 
-##Running locally
+## Running locally
 func host start
 
-##Check Logs
+## Check Logs
 func azure functionapp logstream 'myfunctionsapp'
 
-##Notes
+## Notes
 - Add a X-Function-Key header if Authorization level is enabled
 - Set Environment variables `X_HASURA_ACCESS_KEY` and `X_HASURA_GRAPHQL_ENGINE`
 
